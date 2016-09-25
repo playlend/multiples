@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiples of 3 and 5</title>
+</head>
+<body>
+<script>
+	// prompt the user about multiples
+	alert("Welcome to the program that adds looks for multiples of two numbers and finds it sum!");
+	var num1 = prompt("Please, enter the first number: ");
+	var num2 = prompt("Please, enter the second number: ");
+	var endValue = prompt("Please, enter a number among which to look for multiples of " + num1 + " and " + num2 + ":");
+	var total = 0;
+
+	// create a for loop that writes all the multiples into
+	// the array 
+
+	for (var counter = 0; counter < endValue; counter++)
+	{
+		// creating if statement that is checking if the
+		// counter is multiple
+		if ((counter%num1 === 0) || (counter%num2 === 0))
+		{
+			
+			total = total + counter;
+
+		}
+
+	}
+
+	alert("The sum of all multiples of " + num1 + " and " + num2 + " below " + endValue + " is: " + total);
+
+</script>
+</body>
+</html>
